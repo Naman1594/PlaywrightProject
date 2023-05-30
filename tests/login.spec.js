@@ -1,0 +1,16 @@
+const { test } = require('@playwright/test')
+require('dotenv').config()
+const { POManager } = require('../pages/POManager')
+
+test.skip('Login member portal', async ({ browser }) => {
+  const context = await browser.newContext()
+  const page = await context.newPage()
+  const poManager = new POManager(page)
+  const loginPage = await poManager.getLoginPage()
+  const commonFeatures = await poManager.getCommonFeaturesPage()
+  await loginPage.goTo()
+  await loginPage.loginMemberPortal()
+  await loginPage.clickMemberAccessButton()
+  await commonFeatures.validateLoginSuccess()
+  await commonFeatures.logoutMemberPortal()
+})

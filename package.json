@@ -1,0 +1,31 @@
+{
+  "name": "rest-member-access",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests:headed": "env-cmd -f .env.prod npx playwright test member-access.spec.js --headed",
+    "tests:headed:safari": "env-cmd -f .env.prod npx playwright test --config playwright.config.js --project=safari-headed",
+    "tests:headed:chrome": "env-cmd -f .env.prod npx playwright test --config playwright.config.js --project=chrome-headed",
+    "tests:headed:chrome:stg": "env-cmd -f .env.stg npx playwright test --config playwright.config.js --project=chrome-headed",
+    "tests:headed:demoqa": "env-cmd -f .env.uat npx playwright test --config playwright.config.js --project=chrome-headed",
+    "tests:headless:chrome": "env-cmd -f .env.prod npx playwright test --config playwright.config.js --project=chrome-headless",
+    "tests:headed:firefox": "env-cmd -f .env.prod npx playwright test --config playwright.config.js --project=firefox-headed",
+    "tests:headed:all:debug": "env-cmd -f .env.prod npx playwright test --debug",
+    "tests:prod:headed:chrome:allure": "env-cmd -f .env.prod npx playwright test --config playwright.config.js --project=chrome-headed  --reporter=line,allure-playwright",
+    "tests:uat:headed:chrome:allure": "env-cmd -f .env.uat npx playwright test --config playwright.config.js --project=chrome-headed  --reporter=line,allure-playwright",
+    "tests:debug": "env-cmd -f .env.uat npx playwright test advice.spec.js --debug",
+    "report": "npx playwright show-report",
+    "allure:report": "npx allure generate ./allure-results --clean && npx allure open ./allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.24.2",
+    "allure-commandline": "^2.18.1",
+    "allure-playwright": "^2.0.0-beta.18",
+    "dotenv": "^16.0.1",
+    "env-cmd": "^10.1.0"
+  }
+}

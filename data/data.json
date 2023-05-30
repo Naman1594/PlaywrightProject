@@ -1,0 +1,179 @@
+{
+  "memberPages": {
+    "accountSummaryPage": {
+      "header": "Account summary"
+    },
+    "personalDetailsPage": {
+      "header": "Personal details",
+      "sectionHeaders": {
+        "personalDetails": "Personal details",
+        "postalAddressDetails": "Postal address details",
+        "insurance": "Insurance",
+        "contactDetails": "Contact details",
+        "email": "Email",
+        "residentialAddressDetails": "Residential address details",
+        "membershipDetails": "Membership details",
+        "employers": "Employers"
+      },
+      "sections": {
+        "personalDetails": {
+          "header": "Personal details",
+          "labels": {
+            "Title": "Title:",
+            "Surname": "Surname:",
+            "GivenNames": "First name:",
+            "DateOfBirth": "Date of Birth:",
+            "Gender": "Gender:"
+          },
+          "data": {
+            "Title": "Mr",
+            "Surname": "George",
+            "GivenNames": "Alberto",
+            "DateOfBirth": "27 Jan 1970",
+            "Gender": "Male"
+          }
+        },
+        "contactDetails": {
+          "header": "Contact details",
+          "labels": {
+            "PhoneNumber": "Home phone:",
+            "MobilePhone": "Mobile:",
+            "WorkPhone": "Work phone:",
+            "LastDateUpdatedText": "Last Updated:"
+          },
+          "data": {
+            "PhoneNumber": "0286052255",
+            "MobilePhone": "0490926512",
+            "WorkPhone": "",
+            "LastDateUpdatedText": "15 Jul 2022"
+          }
+        },
+        "membershipDetails": {
+          "labels": {
+            "MemberClassificationDescription": "Product:",
+            "MemberClassificationDescriptionShortDescription": "Product Code:",
+            "DateJoinedFund": "Date joined fund:",
+            "TfnProvided": "TFN provided:",
+            "IsTfnConsentOptIn": "TFN consent:"
+          },
+          "data": {
+            "MemberClassificationDescription": "Rest Corporate",
+            "MemberClassificationDescriptionShortDescription": "REST Corporate",
+            "DateJoinedFund": "02 Mar 2020",
+            "TfnProvided": "Provided",
+            "IsTfnConsentOptIn": "No"
+          },
+          "tfnConsentText": "You have previously authorised  Rest to use your tax file number to search the ATO for other super accounts and consolidate any ATO held monies found with your  Rest account. You do not need to do anything further."
+        },
+        "postalAddressDetails": {
+          "labels": {
+            "PostalAddress_AddressLine1": "Address line1:",
+            "PostalAddress_AddressLine2": "Address line2:",
+            "PostalAddress_Suburb": "Suburb:",
+            "PostalAddress_State": "State:",
+            "PostalAddress_Postcode": "Postcode:",
+            "PostalAddress_CountryName": "Country:"
+          },
+          "data": {
+            "PostalAddress_AddressLine1": "U 12 12 Amicitia Cct",
+            "PostalAddress_AddressLine2": "",
+            "PostalAddress_Suburb": "NORTHMEAD",
+            "PostalAddress_State": "NSW",
+            "PostalAddress_Postcode": "2152",
+            "PostalAddress_CountryName": "AUSTRALIA"
+          }
+        },
+        "residentialAddressDetails": {
+          "labels": {
+            "ResidentialAddress_AddressLine1": "Address line1:",
+            "ResidentialAddress_AddressLine2": "Address line2:",
+            "ResidentialAddress_Suburb": "Suburb:",
+            "ResidentialAddress_State": "State:",
+            "ResidentialAddress_Postcode": "Postcode:",
+            "ResidentialAddress_CountryName": "Country:"
+          },
+          "data": {
+            "ResidentialAddress_AddressLine1": "8 Allerby Crescent",
+            "ResidentialAddress_AddressLine2": "",
+            "ResidentialAddress_Suburb": "JOYNER",
+            "ResidentialAddress_State": "QLD",
+            "ResidentialAddress_Postcode": "4500",
+            "ResidentialAddress_CountryName": "AUSTRALIA"
+          }
+        },
+        "email": {
+          "labels": { "Email": "Email:" },
+          "data": { "Email": "bharathi.rangaiah@rest.com.au" }
+        },
+        "employers": {
+          "table": {
+            "firstColumnHeader": "Name",
+            "secondColumnHeader": "Commenced",
+            "employerRecords": [
+              {
+                "companyName": "Taylor Thomson Whitting Group Pty Ltd",
+                "dateCommenced": "01 Jul 2021"
+              }
+            ]
+          }
+        }
+      },
+      "EditDetailsLinkUrl": "?PlanCode=RS#/Member/PersonalDetails/Update",
+      "EditEmailLinkUrl": "/#/Settings/ChangeEmail?PlanCode=RS"
+    }
+  },
+  "tradesBoard": {
+    "label": "Trades"
+  },
+  "staticBoard": {
+    "label": "Static"
+  },
+  "reconcileBoard": {
+    "label": "Reconcile"
+  },
+  "enquiryBoard": {
+    "label": "Enquiries"
+  },
+  "importsBoard": {
+    "label": "Imports"
+  },
+  "reportsBoard": {
+    "label": "Reports"
+  },
+  "enrichmentPageHeader": {
+    "header": "Enrichment Errors"
+  },
+  "activityPageHeader": {
+    "header": "Activity Errors"
+  },
+  "otherErrors": {
+    "header": "Other Errors"
+  },
+  "dropDownStatusAll": {
+    "value": "All"
+  },
+  "dropDownStatusD": {
+    "value": "D"
+  },
+  "dropDownStatusE": {
+    "value": "E"
+  },
+  
+  "logoutButtonText": "Logout",
+  "commonAssets": {
+    "footerLinks": {
+      "linkText": {
+        "home": "Home",
+        "termsOfUse": "Terms of Use",
+        "glossaryOfTerms": "Glossary of terms",
+        "privacyPolicy": "Privacy Policy & Collection Statement"
+      },
+      "linkUrl": {
+        "home": "/?PlanCode=RS",
+        "termsOfUse": "/?PlanCode=RS#/General/TermsAndConditions?PlanCode=RS",
+        "glossaryOfTerms": "/?PlanCode=RS#/General/GlossaryOfTerms?PlanCode=RS",
+        "privacyPolicy": "http://www.rest.com.au/Privacy-Policy.aspx"
+      }
+    }
+  }
+}

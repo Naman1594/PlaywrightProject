@@ -1,0 +1,8 @@
+node_modules/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+state.json
+.DS_Store
+.DS_Store
+/allure-results/
