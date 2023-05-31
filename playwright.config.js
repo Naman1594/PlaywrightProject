@@ -38,7 +38,22 @@ const config = {
   // /* Opt out of parallel tests on CI. */
   // workers: process.env.CI ? 1 : undefined,
   // /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: "html",
+  
+    reporter: [
+      [
+        "allure-playwright",
+        {
+          detail: true,
+          outputFolder: "my-allure-results",
+          suiteTitle: false,
+          environmentInfo: {
+            E2E_NODE_VERSION: process.version,
+            E2E_OS: process.platform,
+            },
+        },
+      ],
+    ],
+ // reporter: "html",
   projects: [
     {
       name: "safari-headless",

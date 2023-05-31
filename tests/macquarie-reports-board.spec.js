@@ -17,8 +17,8 @@ test.only("User can launch Reports board successfully", async ({
   await reportPage.validateAllDropDowns();
   await reportPage.validateActivityErrorsReportDashboard();
   await reportPage.validateLimitApplied();
-  // await profilePage.clickLogoutButton();
-  // await loginPage.validateLoginPageMessage();
+  await profilePage.clickLogoutButton();
+  await loginPage.validateLoginPageHeader();
 });
 test.skip("User can Logout from Macquarie portal successfully", async ({
   browser,
