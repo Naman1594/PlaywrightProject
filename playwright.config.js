@@ -41,7 +41,7 @@ const config = {
   
     reporter: [
       [
-        "allure-playwright",
+        "html",["allure-playwright",
         {
           detail: true,
           outputFolder: "my-allure-results",
@@ -53,6 +53,7 @@ const config = {
         },
       ],
     ],
+  ],
  // reporter: "html",
   projects: [
     {
