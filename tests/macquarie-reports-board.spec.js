@@ -20,7 +20,7 @@ test.only("User can launch Reports board successfully", async ({
   await profilePage.clickLogoutButton();
   await loginPage.validateLoginPageHeader();
 });
-test.skip("User can Logout from Macquarie portal successfully", async ({
+test.only("User can Logout from Macquarie portal successfully(Should fail)", async ({
   browser,
 }) => {
   const context = await browser.newContext();
@@ -31,5 +31,5 @@ test.skip("User can Logout from Macquarie portal successfully", async ({
   await loginPage.loginMacquariePortal();
   await profilePage.validateProfilePageDisplayed();
   await profilePage.clickLogoutButton();
-  await loginPage.validateLoginPageHeader();
+  await loginPage.validateLoginPageMessage();
 });

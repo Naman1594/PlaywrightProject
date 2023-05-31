@@ -13,7 +13,7 @@ const { devices } = require("@playwright/test");
  */
 const config = {
   testDir: "./tests",
-  retries: 0,
+  retries: 1,
   workers: 1,
   /* Maximum time one test can run for. */
   timeout: 200 * 1000,
@@ -44,13 +44,8 @@ const config = {
         ["allure-playwright",
         {
           detail: true,
-          printSteps: true,
           outputFolder: "my-allure-results",
           suiteTitle: false,
-          environmentInfo: {
-            E2E_NODE_VERSION: process.version,
-            E2E_OS: process.platform,
-            },
         },
       ],
   ],
@@ -82,7 +77,7 @@ const config = {
         browserName: "chromium",
         headless: false,
         screenshot: "only-on-failure",
-        video: "on",
+        video: "retain-on-failure",
         trace: "on", //'on','off','retain-on-failure'
         // permissions: ['geolocation'],
         // ignoreHTTPSErrors: true,
