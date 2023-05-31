@@ -40,10 +40,11 @@ const config = {
   // /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   
     reporter: [
-      [
-        "html",["allure-playwright",
+        ["line", { printSteps: true }], 
+        ["allure-playwright",
         {
           detail: true,
+          printSteps: true,
           outputFolder: "my-allure-results",
           suiteTitle: false,
           environmentInfo: {
@@ -52,9 +53,8 @@ const config = {
             },
         },
       ],
-    ],
   ],
- // reporter: "html",
+
   projects: [
     {
       name: "safari-headless",
@@ -81,8 +81,8 @@ const config = {
       use: {
         browserName: "chromium",
         headless: false,
-        screenshot: "on",
-        video: "retain-on-failure",
+        screenshot: "only-on-failure",
+        video: "on",
         trace: "on", //'on','off','retain-on-failure'
         // permissions: ['geolocation'],
         // ignoreHTTPSErrors: true,
